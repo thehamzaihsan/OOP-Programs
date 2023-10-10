@@ -1,3 +1,3 @@
 # OOP-Programs
 
-My OOP assignment from my secong semester :)
+My OOP assignment from my second semester :)
