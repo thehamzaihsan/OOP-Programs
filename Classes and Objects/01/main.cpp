@@ -19,13 +19,25 @@ class Employee{
 
 int main(){
     Employee employee_array[3];
-    
+    int id_t;
+    float compen_t;
     for (int i = 0; i < 3; i++)
     {
-        employee_array[i].input(5 , 10);
+        cout << "Employee no " << i +1 << endl;
+        cout << "Enter Id ";
+        cin >> id_t;
+        cout << "Enter Compensation";
+        cin >> compen_t;
+        employee_array[i].input(id_t , compen_t);
+        cout << endl;
 
     }
-        employee_array[1].output();
+    cout << endl;
+    for (int i = 0; i < 3; i++)
+    {
+        employee_array[i].output();
+    }
+    
     
     return 0;
 }

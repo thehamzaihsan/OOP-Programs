@@ -1,29 +1,18 @@
-#include <iostream> 
+#include <iostream>
+#include "main.h"
 using namespace std;
 
-
-class Student{
-    private:
-    int a;
-    int b;
-    public:
-    Student(){
-        a = 0;
-        b = 0;
-    }
-    Student(int a_t, int b_t){
-        a = a_t;
-        b = b_t;
-    }
-    void display(){
-        cout << a << " " << b << endl;
-    }
-};
-int main()
-{
-    Student S1;
-    Student S2(4, 5);
-    S1.display();
-    S2.display();
-    return 0;
+int main( )
+{	
+	Distance dist1, dist3;
+	Distance dist2(10, 3.5);
+	
+	dist1.getDist( ); 
+	dist3.AddDist(dist1, dist2);
+	cout <<"\ndist1 ="  ; dist1.ShowDist( );
+	 cout <<"\ndist2 = " ; dist2.ShowDist( );
+	 cout <<"\ndist3 = " ; dist3.ShowDist( );
+     return 0;
 }
+
+
