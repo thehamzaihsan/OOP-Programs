@@ -49,8 +49,10 @@ int main(){
     Vector A(3 , 4);
     Vector B(4 , 3);
     Vector C = A - B;
+    cout << "Subtraction:" << endl;
     C.display();
     C = C*10;
+    cout << "Multiply:" << endl;
     C.display();
     return 0;
 }
