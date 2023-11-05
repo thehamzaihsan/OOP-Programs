@@ -1,6 +1,12 @@
 {
     "files.associations": {
         "*.html": "html",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "atomic": "cpp",
+        "iterator": "cpp",
+        "xstring": "cpp",
+        "xutility": "cpp",
+        "format": "cpp",
+        "memory": "cpp"
     }
 }
