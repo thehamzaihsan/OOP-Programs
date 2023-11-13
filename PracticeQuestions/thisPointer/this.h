@@ -2,15 +2,29 @@
 // Created by Hamza on 11/6/2023.
 //
 
-#ifndef OOP_PROGRAMS_THIS_H
-#define OOP_PROGRAMS_THIS_H
+#include <iostream>
 
-
-
-class this {
-
+class Rectangle{
+private:
+    int length;
+    int width;
+public:
+    Rectangle(int a , int b){
+        length = a;
+        width = b;
+    }
+    int area(){
+        return length*width;
+    }
+    void comp(Rectangle R){
+        if (this->area() > R.area()){
+            std::cout << "big";
+        }
+        else if(this->area() > R.area()){
+            std::cout << "small";
+        }
+        else{
+            std::cout << "same";
+        }
+    }
 };
-
-
-
-#endif //OOP_PROGRAMS_THIS_H

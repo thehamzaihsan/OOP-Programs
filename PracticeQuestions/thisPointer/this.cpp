@@ -3,3 +3,13 @@
 //
 
 #include "this.h"
+
+int main(){
+
+    Rectangle Box(4 , 5);
+
+    Rectangle card(10 , 3);
+
+    card.comp(Box);
+
+}
