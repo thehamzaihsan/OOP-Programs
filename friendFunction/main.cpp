@@ -1,31 +1,50 @@
 #include <iostream>
 using namespace std;
-
-class Friends
+class Computer;
+class Laptop
 {
 private:
     int x;
     int y;
 public:
-Friends(){}
-    Friends(int a , int b){
+Laptop(){}
+    Laptop(int a , int b){
         x = a;
         y = b;
     }
-    int getx()
-    {
-        return x;
+     void const display(){
+        cout << x << endl;
+        cout << y << endl;
     }
-    int gety()
-    {
-        return y;
-    }
-    friend int sum(Friends a);
+    friend Laptop operator+(Laptop a , Computer b);
+   
 };
-int sum(Friends a){
-    return (a.getx() + a.gety());
+
+
+class Computer
+{
+private:
+    int x;
+    int y;
+public:
+Computer(){}
+    Computer(int a , int b){
+        x = a;
+        y = b;
+    }
+    friend Laptop operator+(Laptop a , Computer b);
+};
+
+
+Laptop operator+(Laptop a , Computer b){
+    Laptop L(a.x + b.x , a.y + b.y);
+    return L;
 }
+
+
 int main(){
- Friends c(7 , 8);
- cout << sum(c);
+ Laptop c(7 , 8);
+ Computer c2(7 , 8);
+ Laptop L2 =  c + c2;
+ L2.display();
 }
