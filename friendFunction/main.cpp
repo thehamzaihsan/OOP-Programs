@@ -1,5 +1,10 @@
 #include <iostream>
 using namespace std;
+
+
+
+//not corrct code 
+
 class Computer;
 class Laptop
 {
@@ -16,7 +21,7 @@ Laptop(){}
         cout << x << endl;
         cout << y << endl;
     }
-    friend Laptop operator+(Laptop a , Computer b);
+    friend Laptop operator+(Laptop a);
    
 };
 
@@ -32,19 +37,17 @@ Computer(){}
         x = a;
         y = b;
     }
-    friend Laptop operator+(Laptop a , Computer b);
+    Laptop operator+(Laptop a ){
+        Laptop L(a.x + x , a.y + y); //error 
+        return L;
+    }
+
 };
-
-
-Laptop operator+(Laptop a , Computer b){
-    Laptop L(a.x + b.x , a.y + b.y);
-    return L;
-}
 
 
 int main(){
  Laptop c(7 , 8);
  Computer c2(7 , 8);
- Laptop L2 =  c + c2;
+ Laptop L2 = c2 + c; //error
  L2.display();
 }
