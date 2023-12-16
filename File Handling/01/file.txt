@@ -1,0 +1,4 @@
+Hamza 1 10000
+awais 2 5000
+hashim 3 2000
+ammar 4 3000
