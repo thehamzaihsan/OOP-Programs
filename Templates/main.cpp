@@ -13,7 +13,7 @@ void foo( atype x , btype y ){
 
 int main(){
 
-	int a = 8;
+	int a = 9;
 	float y = 2.5;
 
 	foo(a , y);
