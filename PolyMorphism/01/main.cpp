@@ -68,7 +68,7 @@ int main()
     for (int i = 0; i < Faculity_Count; i++)
     {
         char p;
-        cout << "Do you want Permenent (P) or Visiting Faculity (V): ";
+        cout << "Do you want Permanent (P) or Visiting Faculity (V): ";
         cin  >> p;
         if (p == 'V')
         {

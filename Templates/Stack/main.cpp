@@ -20,7 +20,7 @@ private:
     int MAX_SIZE;
 
 public:
-    Stack(/* args */);
+    Stack();
     bool empty();
     int size();
     t1 *top();
@@ -36,7 +36,7 @@ template <class t1>
 bool Stack<t1>::empty()
 {
 
-    if (array_size == 0)
+    if (array_size > -1)
     {
         return true;
     }
