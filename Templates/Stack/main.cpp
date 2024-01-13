@@ -56,7 +56,7 @@ template <class t1>
 Stack<t1>::Stack(/* args */)
 {
     array_size = -1;
-    MAX_SIZE = 3;
+    MAX_SIZE = 5;
 }
 
 template <class t1>
@@ -105,6 +105,6 @@ int main()
     {
         cerr<< e.getMessage() << endl;
     }
-    cout << *INT_STACK.top() << endl;
+    //cout << *INT_STACK.top() << endl;
     
 }

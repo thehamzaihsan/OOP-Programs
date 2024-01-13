@@ -27,7 +27,7 @@ public:
         cout << "Heart Rate:" << heartRate << " beats per minute." << endl;
     }
     int getID() { return ID; }
-    int getTemp() { return temperature; }
+    float getTemp() { return temperature; }
     int getHeartRate() { return heartRate; }
     friend ostream &operator<<(ostream &os, const Patient p2);
 };
@@ -63,6 +63,8 @@ int main()
             cout << PatientList[i];
         }
     }
+    
 
     ifile.close();
 }
+
